@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.dsi32gr11.tunisiaup.ui.definition.DefinitionFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_definition" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.dsi32gr11.tunisiaup.ui.north.NorthFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_north" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.dsi32gr11.tunisiaup.ui.cap.capFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_cap" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.dsi32gr11.tunisiaup.ui.south.SouthFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_south" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.dsi32gr11.tunisiaup.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.dsi32gr11.tunisiaup.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>
